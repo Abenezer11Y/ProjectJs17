@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <marquee direction="right"><h1>Mapping in Js</h1></marquee>
+        <p id="product"></p>
+
+        <script>
+            var number = [234, 5756, 8943, 1, 43, 123, 62, 294, 1297, 0.8, 9999];
+
+            function funthings(num){
+                return num * 10;
+            }
+
+            var newarray = number.map(funthings);
+            document.getElementById("product").innerHTML = newarray;
+        </script>
+    </body>
+</html>

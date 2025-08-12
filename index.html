@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <marquee><h1>Todays Lesson: Array Sorting</h1></marquee>
+        <p>Don't trust the below button, it will put numbers in Ascending order. But if you click the one below... It is WORSE (It will put it in Descending)</p>
+        <button onclick="Ascending();">Click me... (I am not totally gonna put numbers in Ascending order)</button>
+        <button onclick="Descending();">Click me for a Mistry</button>
+        <p id="Result"></p>
+
+        <script>
+            var point = [234, 5756, 8943, 1, 43, 123, 62, 294, 1297, 0.8, 9999];
+            document.getElementById("Result").innerHTML = point;
+            function Ascending() {
+                point.sort(function (a, b) {return a - b});
+                document.getElementById("Result").innerHTML = point;
+            }
+            function Descending() {
+                    point.sort(function (a, b) { return b - a });
+                    document.getElementById("Result").innerHTML = point;
+                }
+        </script>
+    </body>
+</html>
